@@ -1,4 +1,38 @@
-h1{
+@font-face {
+     font-family: 'ReemKufifun';
+     src: url('/fonts/font1/static/ReemKufiFun-Medium.ttf') format('truetype');
+     font-weight: normal;
+     font-style: normal;
+ }
+ @font-face {
+     font-family: 'Gabarito';
+     src: url('fonts/font2/static/Gabarito-Medium.ttf') format('truetype');
+     font-weight: normal;
+     font-style: normal;
+ }
+
+html {
      background-color:#000;
      color: #fff;
+     border: 7px solid #fff;
+     height: 100%;
+     padding: 0;
+     margin: 0;
+}
+body {
+     font-family: 'Gabarito';
+}
+.spaced-text{
+     word-spacing: 3px;
+}
+.highlighted-text{
+     font-family: ReemKufifun;
+     font-size: 40px;
+     color: #A09A9A;
+}
+#intro{
+     margin-top: 120px;
+     align-items: center;
+     margin-left: 40px;
+     margin-right: 40px;
 }

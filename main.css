@@ -1,6 +1,6 @@
 @font-face {
      font-family: 'ReemKufifun';
-     src: url('/fonts/font1/static/ReemKufiFun-Medium.ttf') format('truetype');
+     src: url('fonts/font1/static/ReemKufiFun-Medium.ttf') format('truetype');
      font-weight: normal;
      font-style: normal;
  }
@@ -14,26 +14,78 @@
 html {
      background-color:#000;
      color: #fff;
-     border: 7px solid #fff;
      height: 100%;
      padding: 0;
      margin: 0;
+     margin-bottom: 4rem;
 }
 body {
      font-family: 'Gabarito';
+     margin-top: 7rem;
+     align-items: center;
+     margin-left: 4rem;
+     margin-right: 4rem;
 }
-.spaced-text{
-     word-spacing: 3px;
+h3{
+     word-spacing: 0.25rem;
      font-weight: lighter;
+     line-height: 2.5rem;
+}
+h2{
+     word-spacing: 0.25rem;
+     font-weight: lighter;
+     line-height: 2.5rem;
 }
 .highlighted-text{
      font-family: ReemKufifun;
-     font-size: 40px;
+     font-size: 2.7rem;
      color: #A09A9A;
 }
-#intro{
-     margin-top: 120px;
-     align-items: center;
-     margin-left: 60px;
-     margin-right: 60px;
+.headings{
+     margin-top: 2.75rem;
+     margin-bottom: 0.8rem;
+     font-size: 3rem;
+     font-family: ReemKufifun;
+     color: #A09A9A;
+
+}
+.headings:before{
+     content: url('images/bullet_point.png');
+     margin-right: 0.3rem;
+}
+a {
+     text-decoration: none; 
+     color: #000;
+}
+.button {
+     font-family: ReemKufifun;
+     font-size: 2.7rem;
+     padding: 0.01rem;
+     color: #A09A9A;
+     display: inline-block;
+     text-decoration: none;
+     border: none;
+     cursor: pointer;
+     transition: color 0.35s ease, transform 0.35s ease, text-shadow 0.3s ease;
+}
+.button:hover {
+     color: #aaff80;
+     transform: scale(1.02);
+     text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+   }
+.link{
+     font-family: ReemKufifun;
+     font-size: 1.5rem;
+     padding: 0.01rem;
+     color: #A09A9A;
+     display: inline-block;
+     text-decoration: none;
+     border: none;
+     cursor: pointer;
+     transition: color 0.35s ease, transform 0.35s ease, text-shadow 0.3s ease;
+}
+.link:hover{
+     color: #67cce8;
+     transform: scale(1.02);
+     text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }

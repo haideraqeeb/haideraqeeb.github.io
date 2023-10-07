@@ -26,22 +26,22 @@ body {
      margin-left: 4rem;
      margin-right: 4rem;
 }
-h3{
+h3 {
      word-spacing: 0.25rem;
      font-weight: lighter;
      line-height: 2.5rem;
 }
-h2{
+h2 {
      word-spacing: 0.25rem;
      font-weight: lighter;
      line-height: 2.5rem;
 }
-.highlighted-text{
+.highlighted-text {
      font-family: ReemKufifun;
      font-size: 2.7rem;
      color: #A09A9A;
 }
-.headings{
+.headings {
      margin-top: 2.75rem;
      margin-bottom: 0.8rem;
      font-size: 3rem;
@@ -49,7 +49,7 @@ h2{
      color: #A09A9A;
 
 }
-.headings:before{
+.headings:before {
      content: url('images/bullet_point.png');
      margin-right: 0.3rem;
 }
@@ -67,15 +67,16 @@ a {
      border: none;
      cursor: pointer;
      transition: color 0.35s ease, transform 0.35s ease, text-shadow 0.3s ease;
+     animation: fadeIn 1.5s ease-in-out forwards;
 }
 .button:hover {
      color: #aaff80;
      transform: scale(1.02);
      text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
    }
-.link{
+.link {
      font-family: ReemKufifun;
-     font-size: 1.5rem;
+     font-size: 2rem;
      padding: 0.01rem;
      color: #A09A9A;
      display: inline-block;
@@ -84,8 +85,19 @@ a {
      cursor: pointer;
      transition: color 0.35s ease, transform 0.35s ease, text-shadow 0.3s ease;
 }
-.link:hover{
+.link:hover {
      color: #67cce8;
      transform: scale(1.02);
      text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
+footer {
+     margin-top: auto;
+   }
+@keyframes fadeIn {
+     from {
+       opacity: 0;
+     }
+     to {
+       opacity: 1;
+     }
+   }

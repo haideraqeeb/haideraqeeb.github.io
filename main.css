@@ -23,8 +23,8 @@ body {
      font-family: 'Gabarito';
      margin-top: 7rem;
      align-items: center;
-     margin-left: 4rem;
-     margin-right: 4rem;
+     margin-left: 3.5rem;
+     margin-right: 3.5rem;
 }
 h1 {
      animation: fadeIn 0.4s ease-in-out forwards;

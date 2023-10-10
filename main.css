@@ -4,20 +4,26 @@
      font-weight: normal;
      font-style: normal;
  }
- @font-face {
+@font-face {
      font-family: 'Gabarito';
      src: url('fonts/font2/static/Gabarito-Medium.ttf') format('truetype');
      font-weight: normal;
      font-style: normal;
  }
-
+@keyframes fadeIn {
+     from {
+       opacity: 0;
+     }
+     to {
+       opacity: 1;
+     }
+}
 html {
      background-color:#000;
      color: #fff;
      height: 100%;
      padding: 0;
      margin: 0;
-     margin-bottom: 4rem;
 }
 body {
      font-family: 'Gabarito';
@@ -95,14 +101,14 @@ a {
 footer {
      margin-top: auto;
    }
-@keyframes fadeIn {
-     from {
-       opacity: 0;
-     }
-     to {
-       opacity: 1;
-     }
-}
 .fade {
      animation: fadeIn 4s ease-in-out backwards;
+}
+::selection {
+     background-color: #fff;
+     color: #000;
+}
+.intro::selection, .link::selection, .button::selection, .headings::selection {
+     background-color: rgb(143, 11, 11);
+     color: #aaff80;
 }
